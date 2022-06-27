@@ -1,0 +1,7 @@
+GET http://localhost:3002/ HTTP/1.1
+
+
+### 
+GET http://localhost:3002/product/62b98471556c1e76e1da72ad HTTP/1.1
+
+GET http://localhost:3002/product HTTP/1.1
