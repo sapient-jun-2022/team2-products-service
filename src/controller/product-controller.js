@@ -9,8 +9,7 @@ export const getAllProducts = (req, res) => {
     if (err) {
       res.send(err);
     }
-    console.log("get all products", products);
-    res.json(products);
+        res.json(products);
   });
 };
 

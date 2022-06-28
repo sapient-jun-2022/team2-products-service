@@ -5,7 +5,7 @@ import routes from "./src/routes/product-routes";
 
 //variable declaration
 const app = express();
-const PORT = 3002;
+const PORT = 3001;
 
 //mongoose setup
 mongoose.Promise = global.Promise;
