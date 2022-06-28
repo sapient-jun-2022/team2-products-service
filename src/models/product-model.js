@@ -19,12 +19,8 @@ export const ProductsSchema = new Schema({
     type: Number,
     required: `Please enter product price`,
   },
-  image: {
-    type: String,
-  },
-  description: {
-    type: String,
-  },
+  image: String,
+  description: String,
   creationDate: {
     type: Date,
     default: Date.now,
