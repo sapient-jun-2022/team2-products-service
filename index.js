@@ -18,5 +18,5 @@ app.use(bodyParser.json({ type: "application/json" }));
 routes(app);
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server started at ${PORT}`);
+  console.log(`Server started at ${process.env.PORT}`);
 });
