@@ -8,11 +8,11 @@ import {
     app.route("/").get(home);
   
     app
-      .route("/product")
+      .route("/products")
       .get(getAllProducts)
   
     app
-      .route("/product/:productID")
+      .route("/products/:productID")
       .get(getProductByID)
   };
   
