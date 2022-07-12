@@ -1,8 +1,10 @@
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
-import routes from "./src/routes/product-routes";
+import routes from "./routes/product-routes";
 require("dotenv").config();
+
+const PORT = process.env.PORT || 3001;
 
 //variable declaration
 const app = express();
@@ -17,6 +19,6 @@ app.use(bodyParser.json({ type: "application/json" }));
 
 routes(app);
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server started at ${process.env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server started at ${PORT}`);
 });
